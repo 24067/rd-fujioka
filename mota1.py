@@ -11,11 +11,11 @@ angle_135 = int(1.0 / 20 * 65536)
 angle_180 = int(0.5 / 20 * 65536)
 angle_45=int(2.0/20*65536)
 
-#import random
-#r=random.randint(1,5)
+import random
+r=random.randint(1,5)
 servo.duty_u16(0)
 i=0
-while i<1:
+while i<=r:
     if servo.duty_u16(angle_0):
         break
     else:
